@@ -1,70 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Stages
+# 1. Initial
+In first stage we need city API, to localize every city in the correct position
+In page https://rapidapi.com/ we suscribe for free to https://rapidapi.com/wirefreethought/api/geodb-cities/ 
+This going to be us API weather.
+We have code sniped  Elect JS code. . .
 
-In the project directory, you can run:
+Next, we need weather API
+In https://home.openweathermap.org/ we go to account My Services  API keys
+And copy key
 
-### `npm start`
+## 2. Create app, extensions
+#### npx create-react-app react-weather-app
+créate-react-app  to create the aplication with all modules we need
+react-weather-app  name
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The next we going to install is 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### react-accessible-accordion
+‘React Component for creating an 'Accordion' that adheres to the WAI ARIA spec for accessibility.’ Say the oficial document.
+Expanding multiple items at once: If you set allowMultipleExpanded to true then the accordion will permit multiple items to be expanded at once.
+### react-select-async-paginate
+AsyncPaginate is an alternative of Async but supports loading page by page. It is wrapper above default react-select thus it accepts all props of default Select
 
-### `npm test`
+## 3. Code
+We going to create 5 (five) files (with a css for each -less one).
+### App.js
+Concat all components, and add the logic for the correct function
+### search.js
+Component used to for make the search and concat with API 
+### current-weather.js
+The principal visual component for look daily weather
+### forecast.js
+For look weekend weather
+### api.js
+Save & export APIs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Special thank's
+To all professors in freeCodeCamp for the excelent step to step class.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
